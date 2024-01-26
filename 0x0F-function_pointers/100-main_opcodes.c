@@ -25,7 +25,7 @@ int main(int argc, char *argv[])
 	bytes = atoi(argv[1]);
 
 
-if (bytes < 0)
+		if (bytes < 0)
 		{
 		printf("Error\n");
 		exit(2);
@@ -37,7 +37,7 @@ if (bytes < 0)
 
 		for (i = 0; i < bytes; i++)
 		{
-			if (i == bytes - 1)
+		if (i == bytes - 1)
 		{
 		printf("%02hhx\n", arr[i]);
 				break;
