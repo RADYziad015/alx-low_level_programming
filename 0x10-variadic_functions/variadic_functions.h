@@ -1,5 +1,5 @@
-#ifndef VARIADIC_H
-#define VARIADIC_H
+#ifndef VARIADIC_H_
+#define VARIADIC_H_
 
 #include <stdarg.h>
 #include <stdio.h>
@@ -16,6 +16,7 @@ typedef struct token
 	void (*f)(char *, va_list);
 } token_t;
 
+int_putchar(char c);
 int sum_them_all(const unsigned int n, ...);
 void print_numbers(const char *separator, const unsigned int n, ...);
 void print_strings(const char *separator, const unsigned int n, ...);
